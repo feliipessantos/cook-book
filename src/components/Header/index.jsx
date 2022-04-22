@@ -1,8 +1,9 @@
+
 import { Link } from 'react-router-dom'
-import { AddButton, Container, Logo } from './Style'
+
+import { AddButton, Container, Logo } from './style'
 
 function Header() {
-
 
   return (
     <Container>

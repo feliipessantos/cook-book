@@ -1,4 +1,4 @@
-import { Container } from './Style'
+import { Container } from './style'
 
 function Footer() {
   return (
