@@ -1,27 +1,36 @@
-import { createGlobalStyle, css } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components'
 
+export const logoFont = css`
+	font-family: 'Mukta';
+`
+export const titleFont = css`
+	font-family: 'Roboto';
+	font-weight: 700;
+`
+export const textFont = css`
+	font-family: 'Roboto';
+	font-weight: 400;
+`
 
 export const reset = css`
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
-  * {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-  }
+	* {
+		padding: 0;
+		margin: 0;
+		border: 0;
+		box-sizing: border-box;
+		text-decoration: none;
+	}
 
-  a, a:hover, a:focus, a:active, a:visited {
-    text-decoration: none;
-    color: inherit;
- }
-
-  
-`;
+	a,
+	a:hover,
+	a:focus,
+	a:active,
+	a:visited {
+		text-decoration: none;
+		color: inherit;
+	}
+`
 
 export const GlobalStyle = createGlobalStyle`
-${reset}
-`;
-
-
+  ${reset} 
+`
