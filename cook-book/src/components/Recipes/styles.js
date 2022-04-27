@@ -12,7 +12,7 @@ export const Container = styled.div`
 	@media (min-width: 920px) {
 		display: inline-flex;
 		padding-left: 4rem;
-		height: 100%;
+		min-height: 35rem;
 	}
 `
 

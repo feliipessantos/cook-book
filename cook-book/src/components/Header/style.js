@@ -40,7 +40,7 @@ export const AddButton = styled.button`
 	transition: 0.4s;
 
 	&:hover {
-		box-shadow: inset 6.5em 0 0 0 ${colors.green};
+		box-shadow: inset 7em 0 0 0 ${colors.green};
 		color: ${colors.light};
 
 		border: 2px solid ${colors.light};
