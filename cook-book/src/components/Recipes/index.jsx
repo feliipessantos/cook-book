@@ -1,19 +1,25 @@
 import { Link } from 'react-router-dom'
-import { Container, Recipe } from './styles'
+import {
+	Container,
+	Recipe,
+	RecipeContainer,
+	RecipeDescription,
+	RecipeTitle
+} from './styles'
 
-function Recipes({addNewRecipe}) {
-
-
-  return (
-    <Container>
-      <Link to={`recipe/${addNewRecipe.id}`}>
-        <Recipe > 
-            <h3>{addNewRecipe.title}</h3>
-            <p>{addNewRecipe.description}</p>
-        </Recipe>
-      </Link>
-    </Container>
-  )
+function Recipes({ addNewRecipe }) {
+	return (
+		<Container>
+			<Link to={`recipe/${addNewRecipe.id}`}>
+				<Recipe>
+					<RecipeContainer>
+						<RecipeTitle>{addNewRecipe.title}</RecipeTitle>
+						<RecipeDescription>{addNewRecipe.description}</RecipeDescription>
+					</RecipeContainer>
+				</Recipe>
+			</Link>
+		</Container>
+	)
 }
 
 export default Recipes

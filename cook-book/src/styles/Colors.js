@@ -3,5 +3,6 @@ export const colors = {
 	orange: '#FF8811',
 	salmon: '#FEB281',
 	red: '#c32f27',
-	light: '#EFE6DD'
+	light: '#EFE6DD',
+	green: '#38A700'
 }

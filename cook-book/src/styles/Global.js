@@ -1,4 +1,6 @@
 import { createGlobalStyle, css } from 'styled-components'
+import styled from 'styled-components'
+import { colors } from '../styles/Colors'
 
 export const logoFont = css`
 	font-family: 'Mukta';
@@ -10,6 +12,14 @@ export const titleFont = css`
 export const textFont = css`
 	font-family: 'Roboto';
 	font-weight: 400;
+`
+
+export const SofShadow = css`
+	box-shadow: 0px 5px 5px -5px ${colors.dark};
+`
+
+export const Background = styled.div`
+	background-color: ${colors.light};
 `
 
 export const reset = css`
