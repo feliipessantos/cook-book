@@ -1,9 +1,11 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import Footer from '../../components/Footer'
 
 import Header from '../../components/Header'
-import { Container, Img, InfoWrapper, Preparation, Title } from './styles'
+import { Background } from '../../styles/Global'
+import { Container, ImgRecipe, InfoWrapper, Preparation, Title } from './styles'
 
 function Recipe() {
 	const [recipeSelected, setRecipeSelected] = useState([])
@@ -18,19 +20,18 @@ function Recipe() {
 	return (
 		<>
 			<Header />
-			<Container>
-				<InfoWrapper>
-					<Title>{recipeSelected.title}</Title>
-					<Preparation>{recipeSelected.description}</Preparation>
-				</InfoWrapper>
-			</Container>
+			<Background>
+				<Container>
+					<InfoWrapper>
+						<Title>{recipeSelected.title}</Title>
+						<ImgRecipe />
+						<Preparation>{recipeSelected.description}</Preparation>
+					</InfoWrapper>
+				</Container>
+			</Background>
+			<Footer />
 		</>
 	)
 }
 
 export default Recipe
-
-{
-	/* <Img/>
-	 */
-}
