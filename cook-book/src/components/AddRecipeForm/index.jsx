@@ -2,7 +2,16 @@ import axios from 'axios'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import { Confirm, Form, Label, Name, Preparation, Title } from './Styles'
+import {
+	CancelBtn,
+	Confirm,
+	ConfirmBtn,
+	Form,
+	Label,
+	Name,
+	Preparation,
+	Title
+} from './Styles'
 
 function AddRecipe() {
 	const [values, setValues] = useState({
@@ -52,10 +61,10 @@ function AddRecipe() {
             <Images/>
             <Images/>
           </ImagesWrapper> */}
-			<Confirm type="submit" onClick={handleSubmit}>
+			<ConfirmBtn type="submit" onClick={handleSubmit}>
 				Confirm
-			</Confirm>
-			<Confirm>Cancel</Confirm>
+			</ConfirmBtn>
+			<CancelBtn>Cancel</CancelBtn>
 			{/* </Label> */}
 		</Form>
 	)
